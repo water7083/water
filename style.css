@@ -1,0 +1,10 @@
+.jumbotron{
+/*
+    background-image: url("https://unsplash.it/1000/300?image=1072");
+    background-size: cover;
+*/
+}
+.jumbotron h1{
+    color:white;
+    text-align: center;
+}
