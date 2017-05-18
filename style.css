@@ -1,108 +1,317 @@
+/* 基礎環境 */
 * {
-    box-sizing: border-box;
-    /*    border: 1px solid gray;*/
+  box-sizing: border-box !important;
+  /* border:1px solid gray; */
 }
-
-html,
 body,
+html,
 header,
-h1,
-h2,
-h3,
-h4,
-h5,
 footer,
-section,
+div,
 ul,
 li,
-p,
-div,
-a,
-article,
+nav,
 img {
-    margin: 0;
-    padding: 0;
-    font-family: "Microsoft JhengHei", "monospace", "sans-serif";
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft JhengHei", "Verdana", "Serif";
 }
 
-header {
-    background-image: url("https://unsplash.it/1000/300?image=109");
-    width: 100%;
-    min-width: 400px;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 100px;
+/* body{
+  background-image:url("https://unsplash.it/1000/500/?image=1068");
+  background-color:#FFF1E1;
+} */
+
+/* 導覽列 */
+nav {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0px !important;
+}
+.navbar {
+  background-color: #DAF6F0 !important;
+}
+.dropdown ul {
+  background-color: #DAF6F0 !important;
+}
+.dropdown a {
+  background-color: #DAF6F0 !important;
+  /* border:1px solid blue; */
+}
+button {
+  background-color: #DAF6F0 !important;
+  border: #DAF6F0 !important;
+}
+.navbar {
+  border-radius: 0px;
+  border: 0;
 }
 
-header h1 {
-    width: 350px;
-    height: 100px;
-    padding: 12px;
-    background: rgba(0, 0, 0, 0.1);
-    color: white;
-    font-size: 70px;
-    text-align: center;
-    text-shadow: 2px 2px 5px rgba(225, 225, 225, 0.7);
+/* 全版圖 */
+.carousel-caption>h3 {
+  font-size: 3.5em;
+}
+.carousel-caption>p {
+  font-size: 1.5em;
+}
+@media (max-width: 520px) {
+  .carousel-caption {
+    display: none;
+    /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
 }
 
-header p {
-    /*    background: rgba(225,225,225,0.3);*/
-    color: black;
-    font-size: 30px;
-    padding-left: 25px;
+/* 內容1 */
+.container {
+  /* background-color:#CCFFFF; */
+  text-align: center;
+  width: 100%;
+  /* border:1px solid blue; */
+  min-width: 200px;
+}
+.homeing {
+  width: 100%;
 }
 
-.jumbotron {
-    background-image: url("https://unsplash.it/1000/500?image=867");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+/* 四小圖 */
+.homesub {
+  float: left;
+}
+@media (max-width: 767px) {
+  .homesub {
+    padding-top: 10px;
+    margin: 5px;
+  }
+  .homesubimg{
+     border-radius:100%;
+    }
 }
 
-.product {
-    background: rgba(225, 225, 225, 0.4);
-    padding: 10px;
+/* 四小圖 ul+img+p */
+.homesubli {
+  list-style-type: none;
+  /* border:1px solid red; */
+  min-width: 120px;
 }
 
-.productmore {
-    font-size: 20px;
+/* 四小圖 img */
+.homesubimg {
+  width: 100%;
+  /* border:20px solid green; */
 }
 
-article {
-    padding-bottom: 20px;
-    text-align: center;
-    margin:10px;
+/* 內容2 */
+.container2{
+  border:2px solid gray;
+  border-radius:50px;
+  margin:5px;
+  padding:10px;
+}
+.listbox {
+  text-align: center;
+  min-width: 80px;
+}
+.listbox>p {
+  word-break: break-all
+}
+.fa{
+  color:black;
+}
+.fa:hover{
+  color:#7AE1CB;
+}
+.fa:active{
+  color:yellow;
+}
+@media (max-width: 600px) {
+  .container2 {
+    padding-top: 20px;
+  }
 }
 
-section {
-    background-image: url("https://unsplash.it/1000/500?image=1051");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.caption {
-    text-align: center;
-}
-
-.caption>h3 {
-    font-size: 35px;
-}
-
-.caption>p {
-    font-size: 20px;
-}
-
-.thumbnail {
-    background-color: rgba(225, 225, 225, 0.4);
-}
+/* 頁尾 */
 footer{
-    clear:both;
-    background-color: #f4cd85;
-    width: 100%;
-    min-width: 400px;
-    height: 100px;
-    text-align:center;
-    padding:30px;
-    color:white;
+  background-color:#DAF6F0;
+  text-align:center;
+  clear:both;
+}
+
+
+/* 網格設定 */
+[class^='col-'] {
+  float: left;
+}
+
+.col-xs-1 {
+  width: calc( 100% * 1 / 12);
+}
+
+.col-xs-2 {
+  width: calc( 100% * 2 / 12);
+}
+
+.col-xs-3 {
+  width: calc( 100% * 3 / 12);
+}
+
+.col-xs-4 {
+  width: calc( 100% * 4 / 12);
+}
+
+.col-xs-5 {
+  width: calc( 100% * 5 / 12);
+}
+
+.col-xs-6 {
+  width: calc( 100% * 6 / 12);
+}
+
+.col-xs-7 {
+  width: calc( 100% * 7 / 12);
+}
+
+.col-xs-8 {
+  width: calc( 100% * 8 / 12);
+}
+
+.col-xs-9 {
+  width: calc( 100% * 9 / 12);
+}
+
+.col-xs-10 {
+  width: calc( 100% * 10 / 12);
+}
+
+.col-xs-11 {
+  width: calc( 100% * 11 / 12);
+}
+
+.col-xs-12 {
+  width: calc( 100% * 12 / 12);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .col-sm-1 {
+    width: calc( 100% * 1 / 12);
+  }
+  .col-sm-2 {
+    width: calc( 100% * 2 / 12);
+  }
+  .col-sm-3 {
+    width: calc( 100% * 3 / 12);
+  }
+  .col-sm-4 {
+    width: calc( 100% * 4 / 12);
+  }
+  .col-sm-5 {
+    width: calc( 100% * 5 / 12);
+  }
+  .col-sm-6 {
+    width: calc( 100% * 6 / 12);
+  }
+  .col-sm-7 {
+    width: calc( 100% * 7 / 12);
+  }
+  .col-sm-8 {
+    width: calc( 100% * 8 / 12);
+  }
+  .col-sm-9 {
+    width: calc( 100% * 9 / 12);
+  }
+  .col-sm-10 {
+    width: calc( 100% * 10 / 12);
+  }
+  .col-sm-11 {
+    width: calc( 100% * 11 / 12);
+  }
+  .col-sm-12 {
+    width: calc( 100% * 12 / 12);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 870px;
+  }
+  .col-md-1 {
+    width: calc( 100% * 1 / 12);
+  }
+  .col-md-2 {
+    width: calc( 100% * 2 / 12);
+  }
+  .col-md-3 {
+    width: calc( 100% * 3 / 12);
+  }
+  .col-md-4 {
+    width: calc( 100% * 4 / 12);
+  }
+  .col-md-5 {
+    width: calc( 100% * 5 / 12);
+  }
+  .col-md-6 {
+    width: calc( 100% * 6 / 12);
+  }
+  .col-md-7 {
+    width: calc( 100% * 7 / 12);
+  }
+  .col-md-8 {
+    width: calc( 100% * 8 / 12);
+  }
+  .col-md-9 {
+    width: calc( 100% * 9 / 12);
+  }
+  .col-md-10 {
+    width: calc( 100% * 10 / 12);
+  }
+  .col-md-11 {
+    width: calc( 100% * 11 / 12);
+  }
+  .col-md-12 {
+    width: calc( 100% * 12 / 12);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .col-lg-1 {
+    width: calc( 100% * 1 / 12);
+  }
+  .col-lg-2 {
+    width: calc( 100% * 2 / 12);
+  }
+  .col-lg-3 {
+    width: calc( 100% * 3 / 12);
+  }
+  .col-lg-4 {
+    width: calc( 100% * 4 / 12);
+  }
+  .col-lg-5 {
+    width: calc( 100% * 5 / 12);
+  }
+  .col-lg-6 {
+    width: calc( 100% * 6 / 12);
+  }
+  .col-lg-7 {
+    width: calc( 100% * 7 / 12);
+  }
+  .col-lg-8 {
+    width: calc( 100% * 8 / 12);
+  }
+  .col-lg-9 {
+    width: calc( 100% * 9 / 12);
+  }
+  .col-lg-10 {
+    width: calc( 100% * 10 / 12);
+  }
+  .col-lg-11 {
+    width: calc( 100% * 11 / 12);
+  }
+  .col-lg-12 {
+    width: calc( 100% * 12 / 12);
+  }
 }
