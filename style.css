@@ -1,0 +1,234 @@
+/*基礎環境*/
+* {
+  box-sizing: border-box !important;
+  /*border:1px solid gray; */
+}
+html,body,nav,div,p,h1,h2,h3,h4,h5,a,ul,li{
+  padding:0px;
+  margin:0px;
+  font-family: "Microsoft JhengHei", "Verdana", "Serif";
+}
+/*導覽列*/
+nav {
+  border-radius: 0px !important;
+  background-color:#DAF6F0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+nav a:hover{
+  color:black !important;
+}
+.dropdown ul {
+  background-color: #DAF6F0 !important;
+  border-radius: 0px;
+}
+.dropdown a {
+  background-color: #DAF6F0 !important;
+}
+button {
+  background-color: #DAF6F0 !important;
+  border: #DAF6F0 !important;
+}
+.navbar {
+  border-radius: 0px;
+  border: 0px;
+}
+/*左欄內容*/
+.container-left{
+  background-image:url("./image/containerleft.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:250px;
+  text-align: center;
+  padding-top: 60px;
+}
+.lefttype img{
+  width: 70px;
+  border-radius: 100%;
+}
+@media screen and (min-width: 768px) {
+  .container-left {
+    height: 700px;
+  }
+  .lefttype {
+    float:right;
+  }
+}
+/*右欄內容*/
+.fonttype{
+  padding:10px;
+}
+.pictypeimg{
+  padding:10px;
+  text-align: center;
+}
+.pictypeimg>img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+/* 網格設定 */
+[class^='col-'] {
+  float: left;
+}
+.col-xs-1 {
+  width: calc( 100% * 1 / 12);
+}
+.col-xs-2 {
+  width: calc( 100% * 2 / 12);
+}
+.col-xs-3 {
+  width: calc( 100% * 3 / 12);
+}
+.col-xs-4 {
+  width: calc( 100% * 4 / 12);
+}
+.col-xs-5 {
+  width: calc( 100% * 5 / 12);
+}
+.col-xs-6 {
+  width: calc( 100% * 6 / 12);
+}
+.col-xs-7 {
+  width: calc( 100% * 7 / 12);
+}
+.col-xs-8 {
+  width: calc( 100% * 8 / 12);
+}
+.col-xs-9 {
+  width: calc( 100% * 9 / 12);
+}
+.col-xs-10 {
+  width: calc( 100% * 10 / 12);
+}
+.col-xs-11 {
+  width: calc( 100% * 11 / 12);
+}
+.col-xs-12 {
+  width: calc( 100% * 12 / 12);
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+  .col-sm-1 {
+    width: calc( 100% * 1 / 12);
+  }
+  .col-sm-2 {
+    width: calc( 100% * 2 / 12);
+  }
+  .col-sm-3 {
+    width: calc( 100% * 3 / 12);
+  }
+  .col-sm-4 {
+    width: calc( 100% * 4 / 12);
+  }
+  .col-sm-5 {
+    width: calc( 100% * 5 / 12);
+  }
+  .col-sm-6 {
+    width: calc( 100% * 6 / 12);
+  }
+  .col-sm-7 {
+    width: calc( 100% * 7 / 12);
+  }
+  .col-sm-8 {
+    width: calc( 100% * 8 / 12);
+  }
+  .col-sm-9 {
+    width: calc( 100% * 9 / 12);
+  }
+  .col-sm-10 {
+    width: calc( 100% * 10 / 12);
+  }
+  .col-sm-11 {
+    width: calc( 100% * 11 / 12);
+  }
+  .col-sm-12 {
+    width: calc( 100% * 12 / 12);
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 870px;
+  }
+  .col-md-1 {
+    width: calc( 100% * 1 / 12);
+  }
+  .col-md-2 {
+    width: calc( 100% * 2 / 12);
+  }
+  .col-md-3 {
+    width: calc( 100% * 3 / 12);
+  }
+  .col-md-4 {
+    width: calc( 100% * 4 / 12);
+  }
+  .col-md-5 {
+    width: calc( 100% * 5 / 12);
+  }
+  .col-md-6 {
+    width: calc( 100% * 6 / 12);
+  }
+  .col-md-7 {
+    width: calc( 100% * 7 / 12);
+  }
+  .col-md-8 {
+    width: calc( 100% * 8 / 12);
+  }
+  .col-md-9 {
+    width: calc( 100% * 9 / 12);
+  }
+  .col-md-10 {
+    width: calc( 100% * 10 / 12);
+  }
+  .col-md-11 {
+    width: calc( 100% * 11 / 12);
+  }
+  .col-md-12 {
+    width: calc( 100% * 12 / 12);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .col-lg-1 {
+    width: calc( 100% * 1 / 12);
+  }
+  .col-lg-2 {
+    width: calc( 100% * 2 / 12);
+  }
+  .col-lg-3 {
+    width: calc( 100% * 3 / 12);
+  }
+  .col-lg-4 {
+    width: calc( 100% * 4 / 12);
+  }
+  .col-lg-5 {
+    width: calc( 100% * 5 / 12);
+  }
+  .col-lg-6 {
+    width: calc( 100% * 6 / 12);
+  }
+  .col-lg-7 {
+    width: calc( 100% * 7 / 12);
+  }
+  .col-lg-8 {
+    width: calc( 100% * 8 / 12);
+  }
+  .col-lg-9 {
+    width: calc( 100% * 9 / 12);
+  }
+  .col-lg-10 {
+    width: calc( 100% * 10 / 12);
+  }
+  .col-lg-11 {
+    width: calc( 100% * 11 / 12);
+  }
+  .col-lg-12 {
+    width: calc( 100% * 12 / 12);
+  }
+}
