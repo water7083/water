@@ -8,6 +8,9 @@ html,body,nav,div,p,h1,h2,h3,h4,h5,a,ul,li{
   margin:0px;
   font-family: "Microsoft JhengHei", "Verdana", "Serif";
 }
+html,body{
+  height: 100%;
+}
 /*導覽列*/
 nav {
   border-radius: 0px !important;
@@ -51,7 +54,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container-left {
-    height: 1000px;
+    height: 100%;
   }
   .lefttype {
     float:right;
