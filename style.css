@@ -41,6 +41,7 @@ button {
   background-image:url("./image/containerleft.JPG");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height:250px;
   text-align: center;
   padding-top: 60px;
@@ -54,7 +55,9 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container-left {
-    height: 100%;
+    overflow:hidden;
+    margin-bottom:-3000px;
+    padding-bottom:3000px;
   }
   .lefttype {
     float:right;
@@ -67,6 +70,9 @@ button {
   }
 }
 /*右欄內容*/
+.container-right{
+  float:left;
+}
 .fonttype{
   padding:10px;
 }
