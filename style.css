@@ -50,6 +50,9 @@ button {
   width: 70px;
   border-radius: 100%;
 }
+.lefttype p{
+  color:white;
+}
 .footer{
   display: none;
 }
@@ -67,7 +70,7 @@ button {
     position:relative;
     top:350px;
     left:100px;
-    color:white;
+    color:black;
   }
 }
 /*右欄內容*/
