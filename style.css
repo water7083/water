@@ -76,6 +76,12 @@ button {
 .fonttype{
   padding:10px;
 }
+.pictypeimg h4{
+  padding-top:10px;
+}
+.pictype{
+  float:left;
+}
 .pictypeimg{
   padding:10px;
   text-align: center;
